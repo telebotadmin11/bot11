@@ -7,7 +7,7 @@ from api import create_user, create_feedback
 from loader import dp
 
 
-@dp.message_handler(commands=['start', 'help'])
+@dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
     await message.reply("Assalomu Aleykum\n ??? botimizga xush kelibsiz!", reply_markup=button)
     print(create_user(message.from_user.username, message.from_user.first_name, message.from_user.id))
