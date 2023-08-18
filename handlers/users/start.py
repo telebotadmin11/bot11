@@ -2,6 +2,7 @@ from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
 from aiogram.dispatcher import FSMContext
 from keyboards.inline.buttons import button
+from aiogram.dispatcher.filters import Text
 from states.states import FeedbackState
 from api import create_user, create_feedback
 from loader import dp
